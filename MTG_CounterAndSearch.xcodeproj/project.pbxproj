@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25FDF7641E38121D004E2606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7631E38121D004E2606 /* main.m */; };
+		25FDF7671E38121D004E2606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7661E38121D004E2606 /* AppDelegate.m */; };
+		25FDF76A1E38121D004E2606 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7691E38121D004E2606 /* ViewController.m */; };
+		25FDF76D1E38121D004E2606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FDF76B1E38121D004E2606 /* Main.storyboard */; };
+		25FDF7701E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF76E1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld */; };
+		25FDF7721E38121D004E2606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FDF7711E38121D004E2606 /* Assets.xcassets */; };
+		25FDF7751E38121D004E2606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FDF7731E38121D004E2606 /* LaunchScreen.storyboard */; };
+		25FDF7801E38121D004E2606 /* MTG_CounterAndSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF77F1E38121D004E2606 /* MTG_CounterAndSearchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25FDF77C1E38121D004E2606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25FDF7571E38121D004E2606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25FDF75E1E38121D004E2606;
+			remoteInfo = MTG_CounterAndSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25FDF75F1E38121D004E2606 /* MTG_CounterAndSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTG_CounterAndSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FDF7631E38121D004E2606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25FDF7651E38121D004E2606 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25FDF7661E38121D004E2606 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25FDF7681E38121D004E2606 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		25FDF7691E38121D004E2606 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25FDF76C1E38121D004E2606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25FDF76F1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTG_CounterAndSearch.xcdatamodel; sourceTree = "<group>"; };
+		25FDF7711E38121D004E2606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25FDF7741E38121D004E2606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25FDF7761E38121D004E2606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25FDF77B1E38121D004E2606 /* MTG_CounterAndSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTG_CounterAndSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FDF77F1E38121D004E2606 /* MTG_CounterAndSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTG_CounterAndSearchTests.m; sourceTree = "<group>"; };
+		25FDF7811E38121D004E2606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25FDF75C1E38121D004E2606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25FDF7781E38121D004E2606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25FDF7561E38121D004E2606 = {
+			isa = PBXGroup;
+			children = (
+				25FDF7611E38121D004E2606 /* MTG_CounterAndSearch */,
+				25FDF77E1E38121D004E2606 /* MTG_CounterAndSearchTests */,
+				25FDF7601E38121D004E2606 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25FDF7601E38121D004E2606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF75F1E38121D004E2606 /* MTG_CounterAndSearch.app */,
+				25FDF77B1E38121D004E2606 /* MTG_CounterAndSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25FDF7611E38121D004E2606 /* MTG_CounterAndSearch */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF7651E38121D004E2606 /* AppDelegate.h */,
+				25FDF7661E38121D004E2606 /* AppDelegate.m */,
+				25FDF7681E38121D004E2606 /* ViewController.h */,
+				25FDF7691E38121D004E2606 /* ViewController.m */,
+				25FDF76B1E38121D004E2606 /* Main.storyboard */,
+				25FDF7711E38121D004E2606 /* Assets.xcassets */,
+				25FDF7731E38121D004E2606 /* LaunchScreen.storyboard */,
+				25FDF7761E38121D004E2606 /* Info.plist */,
+				25FDF76E1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld */,
+				25FDF7621E38121D004E2606 /* Supporting Files */,
+			);
+			path = MTG_CounterAndSearch;
+			sourceTree = "<group>";
+		};
+		25FDF7621E38121D004E2606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF7631E38121D004E2606 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25FDF77E1E38121D004E2606 /* MTG_CounterAndSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF77F1E38121D004E2606 /* MTG_CounterAndSearchTests.m */,
+				25FDF7811E38121D004E2606 /* Info.plist */,
+			);
+			path = MTG_CounterAndSearchTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25FDF75E1E38121D004E2606 /* MTG_CounterAndSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25FDF7841E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearch" */;
+			buildPhases = (
+				25FDF75B1E38121D004E2606 /* Sources */,
+				25FDF75C1E38121D004E2606 /* Frameworks */,
+				25FDF75D1E38121D004E2606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTG_CounterAndSearch;
+			productName = MTG_CounterAndSearch;
+			productReference = 25FDF75F1E38121D004E2606 /* MTG_CounterAndSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25FDF77A1E38121D004E2606 /* MTG_CounterAndSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25FDF7871E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearchTests" */;
+			buildPhases = (
+				25FDF7771E38121D004E2606 /* Sources */,
+				25FDF7781E38121D004E2606 /* Frameworks */,
+				25FDF7791E38121D004E2606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25FDF77D1E38121D004E2606 /* PBXTargetDependency */,
+			);
+			name = MTG_CounterAndSearchTests;
+			productName = MTG_CounterAndSearchTests;
+			productReference = 25FDF77B1E38121D004E2606 /* MTG_CounterAndSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25FDF7571E38121D004E2606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = John;
+				TargetAttributes = {
+					25FDF75E1E38121D004E2606 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 84YJMXPA5S;
+						ProvisioningStyle = Automatic;
+					};
+					25FDF77A1E38121D004E2606 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 84YJMXPA5S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25FDF75E1E38121D004E2606;
+					};
+				};
+			};
+			buildConfigurationList = 25FDF75A1E38121D004E2606 /* Build configuration list for PBXProject "MTG_CounterAndSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25FDF7561E38121D004E2606;
+			productRefGroup = 25FDF7601E38121D004E2606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25FDF75E1E38121D004E2606 /* MTG_CounterAndSearch */,
+				25FDF77A1E38121D004E2606 /* MTG_CounterAndSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25FDF75D1E38121D004E2606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25FDF7751E38121D004E2606 /* LaunchScreen.storyboard in Resources */,
+				25FDF7721E38121D004E2606 /* Assets.xcassets in Resources */,
+				25FDF76D1E38121D004E2606 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25FDF7791E38121D004E2606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25FDF75B1E38121D004E2606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25FDF76A1E38121D004E2606 /* ViewController.m in Sources */,
+				25FDF7671E38121D004E2606 /* AppDelegate.m in Sources */,
+				25FDF7641E38121D004E2606 /* main.m in Sources */,
+				25FDF7701E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25FDF7771E38121D004E2606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25FDF7801E38121D004E2606 /* MTG_CounterAndSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25FDF77D1E38121D004E2606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25FDF75E1E38121D004E2606 /* MTG_CounterAndSearch */;
+			targetProxy = 25FDF77C1E38121D004E2606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25FDF76B1E38121D004E2606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25FDF76C1E38121D004E2606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25FDF7731E38121D004E2606 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25FDF7741E38121D004E2606 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25FDF7821E38121D004E2606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25FDF7831E38121D004E2606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25FDF7851E38121D004E2606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84YJMXPA5S;
+				INFOPLIST_FILE = MTG_CounterAndSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john.MTG-CounterAndSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25FDF7861E38121D004E2606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84YJMXPA5S;
+				INFOPLIST_FILE = MTG_CounterAndSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john.MTG-CounterAndSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		25FDF7881E38121D004E2606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 84YJMXPA5S;
+				INFOPLIST_FILE = MTG_CounterAndSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john.MTG-CounterAndSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG_CounterAndSearch.app/MTG_CounterAndSearch";
+			};
+			name = Debug;
+		};
+		25FDF7891E38121D004E2606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 84YJMXPA5S;
+				INFOPLIST_FILE = MTG_CounterAndSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john.MTG-CounterAndSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG_CounterAndSearch.app/MTG_CounterAndSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25FDF75A1E38121D004E2606 /* Build configuration list for PBXProject "MTG_CounterAndSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25FDF7821E38121D004E2606 /* Debug */,
+				25FDF7831E38121D004E2606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25FDF7841E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25FDF7851E38121D004E2606 /* Debug */,
+				25FDF7861E38121D004E2606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25FDF7871E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25FDF7881E38121D004E2606 /* Debug */,
+				25FDF7891E38121D004E2606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25FDF76E1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25FDF76F1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodel */,
+			);
+			currentVersion = 25FDF76F1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodel */;
+			path = MTG_CounterAndSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25FDF7571E38121D004E2606 /* Project object */;
+}
