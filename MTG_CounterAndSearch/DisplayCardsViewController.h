@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DisplayCardsViewController : UIViewController
+@interface DisplayCardsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property NSArray *cardsArray;
 
 @end

@@ -23,6 +23,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)didSelectSearchCards:(id)sender {
+    
+    [self performSegueWithIdentifier:@"CounterToSearch" sender:nil];
+    
+}
 
 /*
 #pragma mark - Navigation

@@ -7,6 +7,7 @@ target 'MTG_CounterAndSearch' do
 
   # Pods for MTG_CounterAndSearch
 pod 'AFNetworking', '~> 3.0'
+#pod 'AFNetworking+ImageActivityIndicator', '~> 1.0'
 
   target 'MTG_CounterAndSearchTests' do
     inherit! :search_paths

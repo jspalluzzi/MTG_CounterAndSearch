@@ -18,6 +18,9 @@
 		25FDF7911E3827B0004E2606 /* DisplayCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7901E3827B0004E2606 /* DisplayCardsViewController.m */; };
 		25FDF7951E3827D8004E2606 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7941E3827D8004E2606 /* CardViewController.m */; };
 		25FDF79A1E382845004E2606 /* LifeCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7991E382845004E2606 /* LifeCounterViewController.m */; };
+		25FDF79E1E38308C004E2606 /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF79D1E38308C004E2606 /* MultiSelectSegmentedControl.m */; };
+		25FDF7A21E38374B004E2606 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7A11E38374B004E2606 /* CardModel.m */; };
+		25FDF7A51E38571B004E2606 /* CardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7A41E38571B004E2606 /* CardTableViewCell.m */; };
 		989C3F3488754FEBE7FA2EBE /* libPods-MTG_CounterAndSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF53DF60D56E2FEB435CF2C /* libPods-MTG_CounterAndSearchTests.a */; };
 		E81204365D2A40EDA85747E7 /* libPods-MTG_CounterAndSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE6EADBC534424979B7E784 /* libPods-MTG_CounterAndSearch.a */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,12 @@
 		25FDF7941E3827D8004E2606 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		25FDF7981E382845004E2606 /* LifeCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCounterViewController.h; sourceTree = "<group>"; };
 		25FDF7991E382845004E2606 /* LifeCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCounterViewController.m; sourceTree = "<group>"; };
+		25FDF79C1E38308C004E2606 /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
+		25FDF79D1E38308C004E2606 /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
+		25FDF7A01E38374B004E2606 /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardModel.h; sourceTree = "<group>"; };
+		25FDF7A11E38374B004E2606 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardModel.m; sourceTree = "<group>"; };
+		25FDF7A31E38571B004E2606 /* CardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTableViewCell.h; sourceTree = "<group>"; };
+		25FDF7A41E38571B004E2606 /* CardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTableViewCell.m; sourceTree = "<group>"; };
 		4C87E28FD6F4CF097D53B5B7 /* Pods-MTG_CounterAndSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearch/Pods-MTG_CounterAndSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		51BDDD74A3C8F338716119AC /* Pods-MTG_CounterAndSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearchTests/Pods-MTG_CounterAndSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F41FCF5B55EEB7F55B4D5C2 /* Pods-MTG_CounterAndSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearchTests/Pods-MTG_CounterAndSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,11 +129,13 @@
 				25FDF78D1E382788004E2606 /* Search Cards */,
 				25FDF78E1E382797004E2606 /* DisplayCards */,
 				25FDF7921E3827B4004E2606 /* Display Card */,
+				25FDF79F1E38371E004E2606 /* Card */,
 				25FDF76B1E38121D004E2606 /* Main.storyboard */,
 				25FDF7711E38121D004E2606 /* Assets.xcassets */,
 				25FDF7731E38121D004E2606 /* LaunchScreen.storyboard */,
 				25FDF7761E38121D004E2606 /* Info.plist */,
 				25FDF76E1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld */,
+				25FDF79B1E38306F004E2606 /* MultiSelectSegControl */,
 				25FDF7621E38121D004E2606 /* Supporting Files */,
 			);
 			path = MTG_CounterAndSearch;
@@ -161,6 +172,8 @@
 			children = (
 				25FDF78F1E3827B0004E2606 /* DisplayCardsViewController.h */,
 				25FDF7901E3827B0004E2606 /* DisplayCardsViewController.m */,
+				25FDF7A31E38571B004E2606 /* CardTableViewCell.h */,
+				25FDF7A41E38571B004E2606 /* CardTableViewCell.m */,
 			);
 			name = DisplayCards;
 			sourceTree = "<group>";
@@ -190,6 +203,24 @@
 				25FDF7661E38121D004E2606 /* AppDelegate.m */,
 			);
 			name = Delegate;
+			sourceTree = "<group>";
+		};
+		25FDF79B1E38306F004E2606 /* MultiSelectSegControl */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF79C1E38308C004E2606 /* MultiSelectSegmentedControl.h */,
+				25FDF79D1E38308C004E2606 /* MultiSelectSegmentedControl.m */,
+			);
+			name = MultiSelectSegControl;
+			sourceTree = "<group>";
+		};
+		25FDF79F1E38371E004E2606 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF7A01E38374B004E2606 /* CardModel.h */,
+				25FDF7A11E38374B004E2606 /* CardModel.m */,
+			);
+			name = Card;
 			sourceTree = "<group>";
 		};
 		5438D521EBCA596515FEC4FC /* Frameworks */ = {
@@ -404,7 +435,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FDF79E1E38308C004E2606 /* MultiSelectSegmentedControl.m in Sources */,
+				25FDF7A21E38374B004E2606 /* CardModel.m in Sources */,
 				25FDF78C1E382781004E2606 /* SearchCardsViewController.m in Sources */,
+				25FDF7A51E38571B004E2606 /* CardTableViewCell.m in Sources */,
 				25FDF7671E38121D004E2606 /* AppDelegate.m in Sources */,
 				25FDF7951E3827D8004E2606 /* CardViewController.m in Sources */,
 				25FDF7911E3827B0004E2606 /* DisplayCardsViewController.m in Sources */,
