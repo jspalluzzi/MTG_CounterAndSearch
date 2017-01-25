@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LifeCounterViewController.h
 //  MTG_CounterAndSearch
 //
 //  Created by xavier on 1/24/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LifeCounterViewController : UIViewController
 
 @end
-

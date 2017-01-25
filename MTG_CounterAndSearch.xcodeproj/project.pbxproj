@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		25FDF7641E38121D004E2606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7631E38121D004E2606 /* main.m */; };
 		25FDF7671E38121D004E2606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7661E38121D004E2606 /* AppDelegate.m */; };
-		25FDF76A1E38121D004E2606 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7691E38121D004E2606 /* ViewController.m */; };
 		25FDF76D1E38121D004E2606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FDF76B1E38121D004E2606 /* Main.storyboard */; };
 		25FDF7701E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF76E1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld */; };
 		25FDF7721E38121D004E2606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FDF7711E38121D004E2606 /* Assets.xcassets */; };
 		25FDF7751E38121D004E2606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FDF7731E38121D004E2606 /* LaunchScreen.storyboard */; };
 		25FDF7801E38121D004E2606 /* MTG_CounterAndSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF77F1E38121D004E2606 /* MTG_CounterAndSearchTests.m */; };
+		25FDF78C1E382781004E2606 /* SearchCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF78B1E382781004E2606 /* SearchCardsViewController.m */; };
+		25FDF7911E3827B0004E2606 /* DisplayCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7901E3827B0004E2606 /* DisplayCardsViewController.m */; };
+		25FDF7951E3827D8004E2606 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7941E3827D8004E2606 /* CardViewController.m */; };
+		25FDF79A1E382845004E2606 /* LifeCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDF7991E382845004E2606 /* LifeCounterViewController.m */; };
+		989C3F3488754FEBE7FA2EBE /* libPods-MTG_CounterAndSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF53DF60D56E2FEB435CF2C /* libPods-MTG_CounterAndSearchTests.a */; };
+		E81204365D2A40EDA85747E7 /* libPods-MTG_CounterAndSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE6EADBC534424979B7E784 /* libPods-MTG_CounterAndSearch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +37,6 @@
 		25FDF7631E38121D004E2606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25FDF7651E38121D004E2606 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25FDF7661E38121D004E2606 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		25FDF7681E38121D004E2606 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25FDF7691E38121D004E2606 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		25FDF76C1E38121D004E2606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25FDF76F1E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTG_CounterAndSearch.xcdatamodel; sourceTree = "<group>"; };
 		25FDF7711E38121D004E2606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +45,20 @@
 		25FDF77B1E38121D004E2606 /* MTG_CounterAndSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTG_CounterAndSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FDF77F1E38121D004E2606 /* MTG_CounterAndSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTG_CounterAndSearchTests.m; sourceTree = "<group>"; };
 		25FDF7811E38121D004E2606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25FDF78A1E382781004E2606 /* SearchCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCardsViewController.h; sourceTree = "<group>"; };
+		25FDF78B1E382781004E2606 /* SearchCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCardsViewController.m; sourceTree = "<group>"; };
+		25FDF78F1E3827B0004E2606 /* DisplayCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayCardsViewController.h; sourceTree = "<group>"; };
+		25FDF7901E3827B0004E2606 /* DisplayCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayCardsViewController.m; sourceTree = "<group>"; };
+		25FDF7931E3827D7004E2606 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		25FDF7941E3827D8004E2606 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		25FDF7981E382845004E2606 /* LifeCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCounterViewController.h; sourceTree = "<group>"; };
+		25FDF7991E382845004E2606 /* LifeCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCounterViewController.m; sourceTree = "<group>"; };
+		4C87E28FD6F4CF097D53B5B7 /* Pods-MTG_CounterAndSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearch/Pods-MTG_CounterAndSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		51BDDD74A3C8F338716119AC /* Pods-MTG_CounterAndSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearchTests/Pods-MTG_CounterAndSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F41FCF5B55EEB7F55B4D5C2 /* Pods-MTG_CounterAndSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearchTests/Pods-MTG_CounterAndSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEE6EADBC534424979B7E784 /* libPods-MTG_CounterAndSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTG_CounterAndSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5044F8F479B16481C812B00 /* Pods-MTG_CounterAndSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTG_CounterAndSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTG_CounterAndSearch/Pods-MTG_CounterAndSearch.release.xcconfig"; sourceTree = "<group>"; };
+		FBF53DF60D56E2FEB435CF2C /* libPods-MTG_CounterAndSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTG_CounterAndSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81204365D2A40EDA85747E7 /* libPods-MTG_CounterAndSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +74,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989C3F3488754FEBE7FA2EBE /* libPods-MTG_CounterAndSearchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F29957E1308E88A25AC36B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C87E28FD6F4CF097D53B5B7 /* Pods-MTG_CounterAndSearch.debug.xcconfig */,
+				D5044F8F479B16481C812B00 /* Pods-MTG_CounterAndSearch.release.xcconfig */,
+				8F41FCF5B55EEB7F55B4D5C2 /* Pods-MTG_CounterAndSearchTests.debug.xcconfig */,
+				51BDDD74A3C8F338716119AC /* Pods-MTG_CounterAndSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		25FDF7561E38121D004E2606 = {
 			isa = PBXGroup;
 			children = (
 				25FDF7611E38121D004E2606 /* MTG_CounterAndSearch */,
 				25FDF77E1E38121D004E2606 /* MTG_CounterAndSearchTests */,
 				25FDF7601E38121D004E2606 /* Products */,
+				0F29957E1308E88A25AC36B2 /* Pods */,
+				5438D521EBCA596515FEC4FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,10 +115,11 @@
 		25FDF7611E38121D004E2606 /* MTG_CounterAndSearch */ = {
 			isa = PBXGroup;
 			children = (
-				25FDF7651E38121D004E2606 /* AppDelegate.h */,
-				25FDF7661E38121D004E2606 /* AppDelegate.m */,
-				25FDF7681E38121D004E2606 /* ViewController.h */,
-				25FDF7691E38121D004E2606 /* ViewController.m */,
+				25FDF7971E38282F004E2606 /* Delegate */,
+				25FDF7961E382820004E2606 /* Life Counters */,
+				25FDF78D1E382788004E2606 /* Search Cards */,
+				25FDF78E1E382797004E2606 /* DisplayCards */,
+				25FDF7921E3827B4004E2606 /* Display Card */,
 				25FDF76B1E38121D004E2606 /* Main.storyboard */,
 				25FDF7711E38121D004E2606 /* Assets.xcassets */,
 				25FDF7731E38121D004E2606 /* LaunchScreen.storyboard */,
@@ -114,6 +147,60 @@
 			path = MTG_CounterAndSearchTests;
 			sourceTree = "<group>";
 		};
+		25FDF78D1E382788004E2606 /* Search Cards */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF78A1E382781004E2606 /* SearchCardsViewController.h */,
+				25FDF78B1E382781004E2606 /* SearchCardsViewController.m */,
+			);
+			name = "Search Cards";
+			sourceTree = "<group>";
+		};
+		25FDF78E1E382797004E2606 /* DisplayCards */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF78F1E3827B0004E2606 /* DisplayCardsViewController.h */,
+				25FDF7901E3827B0004E2606 /* DisplayCardsViewController.m */,
+			);
+			name = DisplayCards;
+			sourceTree = "<group>";
+		};
+		25FDF7921E3827B4004E2606 /* Display Card */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF7931E3827D7004E2606 /* CardViewController.h */,
+				25FDF7941E3827D8004E2606 /* CardViewController.m */,
+			);
+			name = "Display Card";
+			sourceTree = "<group>";
+		};
+		25FDF7961E382820004E2606 /* Life Counters */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF7981E382845004E2606 /* LifeCounterViewController.h */,
+				25FDF7991E382845004E2606 /* LifeCounterViewController.m */,
+			);
+			name = "Life Counters";
+			sourceTree = "<group>";
+		};
+		25FDF7971E38282F004E2606 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				25FDF7651E38121D004E2606 /* AppDelegate.h */,
+				25FDF7661E38121D004E2606 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		5438D521EBCA596515FEC4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEE6EADBC534424979B7E784 /* libPods-MTG_CounterAndSearch.a */,
+				FBF53DF60D56E2FEB435CF2C /* libPods-MTG_CounterAndSearchTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25FDF7841E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearch" */;
 			buildPhases = (
+				AF95E05D913B59E7DF89EE4D /* [CP] Check Pods Manifest.lock */,
 				25FDF75B1E38121D004E2606 /* Sources */,
 				25FDF75C1E38121D004E2606 /* Frameworks */,
 				25FDF75D1E38121D004E2606 /* Resources */,
+				7C1A1D157DE10465E83AB7B5 /* [CP] Embed Pods Frameworks */,
+				C2F830B9B3D6C5A9047B37ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25FDF7871E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearchTests" */;
 			buildPhases = (
+				0254C6B9F4D184AA8BC8E494 /* [CP] Check Pods Manifest.lock */,
 				25FDF7771E38121D004E2606 /* Sources */,
 				25FDF7781E38121D004E2606 /* Frameworks */,
 				25FDF7791E38121D004E2606 /* Resources */,
+				B1B9856DF51514C88C79180A /* [CP] Embed Pods Frameworks */,
+				4767406727FCD05DB752C0F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,15 +306,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0254C6B9F4D184AA8BC8E494 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4767406727FCD05DB752C0F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTG_CounterAndSearchTests/Pods-MTG_CounterAndSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1A1D157DE10465E83AB7B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTG_CounterAndSearch/Pods-MTG_CounterAndSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF95E05D913B59E7DF89EE4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B9856DF51514C88C79180A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTG_CounterAndSearchTests/Pods-MTG_CounterAndSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F830B9B3D6C5A9047B37ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTG_CounterAndSearch/Pods-MTG_CounterAndSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25FDF75B1E38121D004E2606 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FDF76A1E38121D004E2606 /* ViewController.m in Sources */,
+				25FDF78C1E382781004E2606 /* SearchCardsViewController.m in Sources */,
 				25FDF7671E38121D004E2606 /* AppDelegate.m in Sources */,
+				25FDF7951E3827D8004E2606 /* CardViewController.m in Sources */,
+				25FDF7911E3827B0004E2606 /* DisplayCardsViewController.m in Sources */,
 				25FDF7641E38121D004E2606 /* main.m in Sources */,
 				25FDF7701E38121D004E2606 /* MTG_CounterAndSearch.xcdatamodeld in Sources */,
+				25FDF79A1E382845004E2606 /* LifeCounterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +544,7 @@
 		};
 		25FDF7851E38121D004E2606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C87E28FD6F4CF097D53B5B7 /* Pods-MTG_CounterAndSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 84YJMXPA5S;
@@ -367,6 +557,7 @@
 		};
 		25FDF7861E38121D004E2606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5044F8F479B16481C812B00 /* Pods-MTG_CounterAndSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 84YJMXPA5S;
@@ -379,6 +570,7 @@
 		};
 		25FDF7881E38121D004E2606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F41FCF5B55EEB7F55B4D5C2 /* Pods-MTG_CounterAndSearchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 84YJMXPA5S;
@@ -392,6 +584,7 @@
 		};
 		25FDF7891E38121D004E2606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BDDD74A3C8F338716119AC /* Pods-MTG_CounterAndSearchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 84YJMXPA5S;
@@ -422,6 +615,7 @@
 				25FDF7861E38121D004E2606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25FDF7871E38121D004E2606 /* Build configuration list for PBXNativeTarget "MTG_CounterAndSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +624,7 @@
 				25FDF7891E38121D004E2606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
