@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setTitle:@"2 Players"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

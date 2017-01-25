@@ -8,6 +8,8 @@
 
 #import "SearchCardsViewController.h"
 
+
+
 @interface SearchCardsViewController ()
 @property (weak, nonatomic) IBOutlet MultiSelectSegmentedControl *myMultiSeg;
 @property (weak, nonatomic) IBOutlet UITextField *cardNameTextField;
@@ -15,13 +17,18 @@
 
 @property NSArray *allCardsArray;
 
+@property NSString *titlesToParams;
+
 @end
 
 @implementation SearchCardsViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.titlesToParams = @"";
     
     _myMultiSeg.delegate = self;
 }
@@ -29,6 +36,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//MARK: - UITestFeilds
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    
+    
 }
 
 //MARK: - MultiSelectSegmentedControl
@@ -44,21 +59,34 @@
     
     NSLog(@"selected: '%@'", [multiSelectSegmentedControl.selectedSegmentTitles componentsJoinedByString:@","]);
     
+    self.titlesToParams = [[multiSelectSegmentedControl.selectedSegmentTitles componentsJoinedByString:@"|"] lowercaseString];
 }
 
+
+
+//MARK: - IBActions
 
 - (IBAction)didSelectSearchBtn:(id)sender {
     
     //verify the information
-    //Display activity indicator
-    //Send it to the API calling class
-    //Remove activity indicator
-    //Send information to DisplayCardsVC (info should be CardModels)
+    if(!self.cardNameTextField.hasText){
+        return;
+    }
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params addEntriesFromDictionary:@{@"name": self.cardNameTextField.text}];
+    
+    if(self.costTextField.hasText){
+        [params addEntriesFromDictionary:@{@"cmc":self.costTextField.text}];
+    }
+    
+    if(![self.titlesToParams isEqual: @""]){
+        [params addEntriesFromDictionary:@{@"colors":self.titlesToParams}];
+    }
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    NSDictionary *params = @{@"name": @"reality smasher"};
     
     [manager GET:@"https://api.magicthegathering.io/v1/cards" parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"TASK: %@", task);
         NSLog(@"JSON: %@", responseObject);
         if ([responseObject isKindOfClass:[NSArray class]]) {
             NSArray *responseArray = responseObject;
@@ -76,11 +104,16 @@
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
+}
+
+
+//MARK: - UIGestures
+- (IBAction)didTapView:(id)sender {
     
-    
-    
+    [self setEditing: false];
     
 }
+
 
 
 #pragma mark - Navigation

@@ -12,6 +12,6 @@
 #import "UIImageView+AFNetworking.h"
 #import "DisplayCardsViewController.h"
 
-@interface SearchCardsViewController : UIViewController <MultiSelectSegmentedControlDelegate>
+@interface SearchCardsViewController : UIViewController <MultiSelectSegmentedControlDelegate, UITextFieldDelegate>
 
 @end

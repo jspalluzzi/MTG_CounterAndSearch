@@ -9,6 +9,7 @@
 #import "CardViewController.h"
 
 @interface CardViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
 
 @end
 
@@ -17,11 +18,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if(self.cardImageURL != nil){
+        [self loadLargeImage];
+    }
+    if(self.cardName != nil){
+        [self setTitle:self.cardName];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadLargeImage {
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.cardImageURL]];
+    
+    [self.cardImageView setImageWithURLRequest:request
+                                  placeholderImage:nil
+                                           success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                               self.cardImageView.image = image;
+                                               //[self setNeedsLayout];
+                                           } failure:nil];
+    
 }
 
 /*

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImageView+AFNetworking.h"
 
 @interface CardViewController : UIViewController
+
+@property NSString *cardImageURL;
+@property NSString *cardName;
 
 @end

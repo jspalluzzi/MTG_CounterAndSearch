@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardModel.h"
+#import "CardTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
+
+#import "CardViewController.h"
 
 @interface DisplayCardsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

@@ -7,9 +7,7 @@
 //
 
 #import "DisplayCardsViewController.h"
-#import "CardModel.h"
-#import "CardTableViewCell.h"
-#import "UIImageView+AFNetworking.h"
+
 
 @interface DisplayCardsViewController ()
 
@@ -34,9 +32,6 @@
     return _cardsArray.count;
 }
 
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *MyIdentifier = @"CardCell"; //Set Identifier for cell
     
@@ -44,8 +39,8 @@
     
     CardTableViewCell *cell = (CardTableViewCell *)[tableView dequeueReusableCellWithIdentifier: MyIdentifier];
 
-    cell.cardNameLabel = cardDict[@"name"];
-    cell.colorsLabel = cardDict[@""];
+    cell.cardNameLabel.text = [NSString stringWithFormat:@"%@",cardDict[@"name"]];
+    cell.colorsLabel.text = [NSString stringWithFormat:@"Mana Cost: %@",cardDict[@"cmc"]];
     
     NSString *strImageLink = [NSString stringWithFormat:@"%@",cardDict[@"imageUrl"]];
     __weak CardTableViewCell *weakCell = cell;
@@ -59,19 +54,32 @@
                                                [weakCell setNeedsLayout];
                                            } failure:nil];
     
-    
     return cell;
     
 }
 
-/*
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self performSegueWithIdentifier:@"CardsToCard" sender:indexPath];
+    
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    NSIndexPath *indexPath = (NSIndexPath*)sender;
+    
+    CardViewController *cardVC = (CardViewController*)[segue destinationViewController];
+    NSDictionary *cardDict = [_cardsArray objectAtIndex:indexPath.row];
+    
+    cardVC.cardImageURL = [NSString stringWithFormat:@"%@",cardDict[@"imageUrl"]];
+    cardVC.cardName = [NSString stringWithFormat:@"%@",cardDict[@"name"]];
 }
-*/
+
 
 @end
